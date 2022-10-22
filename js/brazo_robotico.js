@@ -43,17 +43,17 @@ class BrazoRobotico{
     }
 
     texturaMetalica(color){
-        const loader = new THREE.TextureLoader().load("../textures/brazo.jpg");
+        const loader = new THREE.TextureLoader().load("../iluminacion.github.io/textures/brazo.jpg");
         return new THREE.MeshLambertMaterial({color:color,map:loader});
     }
 
     texturaMetalicaBrillante(color){
-        const loader = new THREE.TextureLoader().load("../textures/brazo.jpg");
+        const loader = new THREE.TextureLoader().load("../iluminacion.github.io/textures/brazo.jpg");
         return new THREE.MeshPhongMaterial({color:color,map:loader, shininess:100});
     }
 
     entornoBrazo(){
-        const path = '../textures/habitacion/';
+        const path = '../iluminacion.github.io/textures/habitacion/';
         const format = '.jpg';
         const entorno = [ path+"posx"+ format, path+"negx"+ format,
                       path+"posy"+ format, path+"negy"+ format,

@@ -265,7 +265,7 @@ function loadScene()
     brazoRobotico =  new BrazoRobotico(false);
     robot = brazoRobotico.model();
     
-    const texsuelo = new THREE.TextureLoader().load("../textures/metallic.jpg");
+    const texsuelo = new THREE.TextureLoader().load("../iluminacion.github.io/textures/metallic.jpg");
     texsuelo.repeat.set(4,5);
     texsuelo.wrapS= texsuelo.wrapT = THREE.RepeatWrapping;
     const matsuelo = new THREE.MeshStandardMaterial({color:"rgb(150,150,150)",map:texsuelo});
@@ -277,7 +277,7 @@ function loadScene()
     suelo.position.z= 0;
     scene.add(suelo);
     scene.add( robot);
-    scene.add(new Habitacion('../textures/habitacion/').model())
+    scene.add(new Habitacion('../iluminacion.github.io/textures/habitacion/').model())
     //scene.add(new THREE.AxesHelper(120))
 }
 
